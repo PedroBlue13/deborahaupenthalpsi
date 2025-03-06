@@ -704,6 +704,8 @@ footer a:hover {
 }
 .services-section {
     padding: 15px 0!important;
+    background-image: url("https://www.transparenttextures.com/patterns/wine-cork.png");
+
 }
 
 .psicoterapia-section h2 {
@@ -711,6 +713,7 @@ footer a:hover {
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 25px;
+    
 }
 
 .psicoterapia-intro {
@@ -778,6 +781,10 @@ footer a:hover {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 0;
+}
+.psicoterapia-section{
+    background-image: url("https://www.transparenttextures.com/patterns/wine-cork.png");
+
 }
 
 /* Responsividade */
