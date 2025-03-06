@@ -1,0 +1,1126 @@
+/* ===== Seção de Especialidades ===== */
+.specialty-section {
+    padding: 90px 0;
+    background-color: #f8f9fc;
+    position: relative;
+}
+
+/* Adicionar um efeito de ondas no topo da seção */
+.specialty-section:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffffff' fill-opacity='1' d='M0,96L48,112C96,128,192,160,288,154.7C384,149,480,107,576,101.3C672,96,768,128,864,154.7C960,181,1056,203,1152,186.7C1248,171,1344,117,1392,90.7L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z'%3E%3C/path%3E%3C/svg%3E") center top no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+.specialty-cards {
+    position: relative;
+    z-index: 2;
+}
+
+/* Cards de especialidades */
+.specialty-card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 35px 25px;
+    height: 100%;
+    text-align: center;
+    transition: all 0.4s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    position: relative;
+    overflow: hidden;
+}
+
+.specialty-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Efeito sutil de borda colorida no hover */
+.specialty-card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 0;
+    background-color: var(--specialty-color, #4e73df);
+    transition: all 0.4s ease;
+}
+
+.specialty-card:hover:before {
+    height: 100%;
+}
+
+/* Ícones de especialidades */
+.specialty-icon {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 25px;
+    background-color: rgba(78, 115, 223, 0.1);
+    color: var(--specialty-color, #4e73df);
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.specialty-icon:after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 50%;
+    border: 2px solid rgba(78, 115, 223, 0.2);
+    opacity: 0;
+    transform: scale(1.2);
+    transition: all 0.4s ease;
+}
+
+.specialty-card:hover .specialty-icon {
+    background-color: var(--specialty-color, #4e73df);
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.specialty-card:hover .specialty-icon:after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.specialty-icon i {
+    font-size: 32px;
+    line-height: 80px;
+}
+
+/* Título e descrição de especialidades */
+.specialty-card h5 {
+    margin-bottom: 18px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #333;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.specialty-card:hover h5 {
+    color: var(--specialty-color, #4e73df);
+}
+
+/* Linha decorativa sob o título */
+.specialty-card h5:after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: var(--specialty-color, #4e73df);
+    transition: all 0.4s ease;
+    transform: translateX(-50%);
+}
+
+.specialty-card:hover h5:after {
+    width: 70%;
+}
+
+.specialty-card p {
+    color: #666;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* Cores específicas para cada especialidade */
+.specialty-card:nth-child(1) {
+    --specialty-color: #e74a3b; /* Ansiedade - vermelho */
+}
+
+.specialty-card:nth-child(2) {
+    --specialty-color: #36b9cc; /* Depressão - azul claro */
+}
+
+.specialty-card:nth-child(3) {
+    --specialty-color: #1cc88a; /* Desenvolvimento - verde */
+}
+
+.specialty-card:nth-child(4) {
+    --specialty-color: #f6c23e; /* Relacionamentos - amarelo */
+}
+
+.specialty-card:nth-child(5) {
+    --specialty-color: #5a5c69; /* Trabalho - cinza */
+}
+
+.specialty-card:nth-child(6) {
+    --specialty-color: #4e73df; /* TCC - azul */
+}
+
+/* Animações */
+.animate__animated.animate__flipInX {
+    animation-duration: 1s;
+}
+
+/* Responsividade */
+@media (max-width: 991px) {
+    .specialty-section {
+        padding: 70px 0;
+    }
+    
+    .specialty-card {
+        padding: 30px 20px;
+        margin-bottom: 25px;
+    }
+    
+    .specialty-icon {
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        margin-bottom: 20px;
+    }
+    
+    .specialty-icon i {
+        font-size: 28px;
+        line-height: 70px;
+    }
+    
+    .specialty-card h5 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 767px) {
+    .specialty-section {
+        padding: 60px 0;
+    }
+    
+    .specialty-card {
+        padding: 25px 15px;
+    }
+    
+    .specialty-icon {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+    }
+    
+    .specialty-icon i {
+        font-size: 24px;
+        line-height: 60px;
+    }
+    
+    .specialty-card h5 {
+        font-size: 17px;
+    }
+    
+    .specialty-card p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 575px) {
+    .specialty-section:before {
+        height: 50px;
+    }
+}
+
+
+
+
+@font-face {
+    font-family: 'PoppinsMedium';
+    src: url('../fonts/Poppins-Medium.otf');
+}
+
+@font-face {
+    font-family: 'PoppinsRegular';
+    src: url('../fonts/Poppins-Regular.otf');
+}
+
+
+:root {
+    --color-bg: #fffdf7;
+    --color-black: #212121;
+    --color-white: #ffffff;
+    --color-text: #4f4f4f;
+    --color-primary: #373537;
+    --color-secondary: #9a6e5a;
+    --color-ruimte: #bd9a6a;
+    --color-red: #e74c3c;
+    --color-green: #2ecc71;
+    --color-green-black: #16743d;
+    --color-purple: #c43a86;
+    --color-purple-black: #af196b;
+    --color-separate: #e6e2e2;
+}
+
+section,
+div,
+.color-text {
+    color: var(--color-text) !important;
+}
+
+.color-primary {
+    color: var(--color-primary);
+}
+
+html,
+body {
+    font-family: 'PoppinsRegular', 'Rubik', sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+b {
+    font-family: 'PoppinsMedium', 'Rubik', sans-serif;
+}
+
+.b {
+    font-family: 'PoppinsMedium', 'Rubik', sans-serif;
+}
+
+.name {
+    font-size: 30px;
+}
+
+.shadow {
+    filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.788));
+}
+
+.light {
+    filter: drop-shadow(0px 10px 15px rgba(255, 255, 255, 0.788));
+}
+
+div,
+ul,
+li,
+.nav-link {
+    color: var(--color-white) !important;
+    font-size: 12px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.fix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.header {
+    background-color: var(--color-primary);
+
+}
+
+.container {
+    max-width: 100%;
+}
+
+.img-logo {
+    margin-right: 30%;
+    height: 50%;
+    width: 40%;
+    max-width: 160px;
+    transition: transform 0.3s ease;
+    border-radius: 100px;
+}
+
+.img-logo:hover {
+    transform: scale(1.05); /* Aumenta levemente a imagem */
+  }
+
+.navbar-togle {
+    color: var(--color-white);
+}
+
+.btn-icon {
+    padding-right: 75px;
+}
+
+.btn-icon .icon {
+    display: inline-block;
+    color: var(--color-black);
+    background-color: var(--color-primary);
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    right: 10px;
+    margin-top: -8px;
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 6px;
+
+}
+
+.bio {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-color: #efe8de;
+    filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.527));
+
+}
+
+.text-bio {
+    flex-direction: column!important;
+    justify-content: center!important;
+    margin-top: 20px;
+    padding-left: 35px; 
+    padding-right: 35px; 
+}
+
+.text-bio h4 {
+    color: var(--color-primary);
+    font-size: 16px;
+}
+
+.text-bio p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.text-bio strong {
+    color: var(--color-secondary);
+}
+
+.btn-blue {
+    padding: 12px 30px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-radius: 50px;
+    box-shadow: 0 8px 20px rgba(128, 132, 141, 0.514); /* Sombra maior permanente */
+    background: linear-gradient(45deg, var(--color-primary), #242527fa);
+    border: none;
+     /* Elevação permanente */
+     /* Animação de pulso permanente */
+}
+.btn-blue2 {
+    padding: 12px 30px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-radius: 50px;
+    box-shadow: 0 8px 20px rgba(26, 44, 83, 0.3); /* Sombra maior permanente */
+    background: linear-gradient(45deg, var(--color-primary), #76787c);
+    border: none;
+     /* Elevação permanente */
+     /* Animação de pulso permanente */
+}
+
+.btn-blue.active,
+.btn-blue:hover {
+    background-color: var(--color-secondary);
+    animation: pulse 2s infinite;
+    transform: translateY(-3px);
+}
+.btn-blue2:hover {
+    
+    transform: translateY(-3px);
+}
+
+.btn-green {
+    background-color: var(--color-green);
+    color: var(--color-white) !important;
+    border-radius: 20px;
+    padding: 15px 25px;
+    font-size: 15px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 1);
+}
+
+.btn-green.active,
+.btn-green:hover {
+    background-color: var(--color-green-black);
+    transform: translateY(-3px);
+}
+
+.btn-purple {
+    background-color: var(--color-purple);
+    color: var(--color-white) !important;
+    border-radius: 20px;
+    padding: 15px 25px;
+    font-size: 15px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 1);
+}
+
+.btn-purle.active,
+.btn-purple:hover {
+    background-color: var(--color-purple-black);
+    transform: translateY(-3px);
+}
+
+.btn-icon-left {
+    padding-left: 60px;
+}
+.btn-icon-left-g {
+    padding-left: 60px;
+}
+
+.btn-icon-left span.icon-left {
+    display: inline-block;
+    color: var(--color-white);
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    margin-left: -60px;
+    margin-top: -8px;
+    text-align: center;
+    padding-top: 12px;
+}
+
+.img-hud {
+    height: 110%;
+    max-height: 480px;
+    /* Altura fixa, igual ao original */
+    width: 60%;
+    /* Proporção da largura da tela */
+    max-width: 420px;
+    /* Limita o tamanho máximo */
+    border-radius: 90px;
+    background-color: var(--color-primary);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    /* Centraliza horizontalmente */
+    top: 10%;
+    /* Ajusta a posição vertical */
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 1);
+    z-index: 1;
+    /* Garante que fique acima de outros elementos */
+}
+
+.img-border {
+    height: 296px;
+    /* Proporção da altura do contêiner pai */
+    width: 296px;
+    /* Proporção da largura do contêiner pai */
+    max-width: 296px;
+    /* Limita o tamanho máximo */
+    max-height: 296px;
+    border-radius: 60px;
+    border: 10px solid var(--color-white);
+    background-color: transparent;
+    position: absolute;
+    left: 50%;
+    top: 62%;
+    transform: translate(-50%, -50%);
+    /* Centraliza em relação ao pai */
+    z-index: 2;
+    /* Sobrepõe a .img-hud */
+    filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.466));
+}
+
+.img-perfil {
+    position: absolute;
+    height: auto;
+    /* Ajusta automaticamente a altura */
+    width: 60%;
+    /* Controla a largura */
+    max-width: 460px;
+    /* Limita a largura máxima */
+    max-height: 460px;
+    /* Limita a altura máxima */
+    border-radius: 20px;
+    left: 50%;
+    top: 62%;
+    transform: translate(-50%, -50%);
+    padding: 4px;
+    z-index: 3;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}
+
+.services {
+    padding-top: 4%;
+    padding-bottom: 150px;
+    background-color: var(--color-separate);
+    filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.466));
+
+}
+
+.title {
+    color: var(--color-secondary);
+    font-size: 40px;
+    margin-top: 5px;
+    margin-bottom: 1px;
+}
+
+.sub-title {
+    color: var(--color-secondary);
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+
+.text-color-primary {
+    color: var(--color-primary);
+}
+
+.text-ref {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.btn-header {
+    background-color: var(--color-primary);
+    color: var(--color-white) !important;
+    border-radius: 20px;
+    padding: 15px 15px;
+    font-size: 15px;
+    z-index: 3;
+    position: relative;
+}
+
+.card {
+    margin-top: -30px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 1);
+    z-index: 2;
+    position: relative;
+    max-height: 80%;
+    min-height: 170px;
+}
+
+.neuro-text {
+    margin-top: 20px;
+    font-size: 15px;
+    color: var(--color-primary);
+}
+
+.piscoterapia-margin {
+    margin-top: 100px;
+}
+
+.psico-.card {
+    margin-top: -30px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 1);
+    z-index: 2;
+    position: relative;
+}
+
+.btn-psico {
+    background-color: var(--color-primary);
+    color: var(--color-white) !important;
+    border-radius: 10px;
+    padding: 15px 15px;
+    font-size: 15px;
+    z-index: 3;
+    position: relative;
+    max-width: 80%;
+    min-width: 250px;
+}
+
+.margin-psico {
+    margin-left: 0%;
+}
+
+.contact {
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+.logo-contact {
+    height: 120%;
+    width: 120%;
+    max-width: 260px;
+}
+
+.faq {
+    padding-top: 80px;
+    padding-bottom: 190px;
+    background-color: var(--color-separate);
+    filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.466));
+}
+
+.faq-card {
+    margin-top: -10px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 1);
+    z-index: 2;
+    position: relative;
+    background-color: var(--color-white);
+    margin-left: 27%;
+    max-width: 45%;
+    min-width: 400px;
+    font-size: 15px;
+}
+
+.faq-button {
+    max-width: 55%;
+    min-width: 450px;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+
+footer {
+    background-color: var(--color-primary);
+    padding: 20px;
+}
+
+footer a {
+    color: var(--color-separate);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--color-white);
+    text-decoration: underline;
+
+}
+
+
+/* ===== Seção de Psicoterapia (Estilo Referência) ===== */
+:root {
+    --primary-color: #1A2C53;
+}
+
+.psicoterapia-section {
+    padding: 30px 0;
+    background-color: #f7f7fa;
+}
+.services-section {
+    padding: 15px 0!important;
+}
+
+.psicoterapia-section h2 {
+    color: #333;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.psicoterapia-intro {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.psicoterapia-intro p {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* Cards de Psicoterapia */
+.psicoterapia-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px 25px;
+    height: 100%;
+    text-align: center;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.psicoterapia-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Ícones */
+.card-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 25px;
+    background-color: var(--color-secondary); /* Azul mais escuro para o fundo */
+    color: #4a68e0; /* Azul mais escuro para o ícone */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.card-icon i {
+    font-size: 32px;
+    transition: all 0.3s ease;
+}
+
+/* Efeito hover - ícone branco e círculo na cor primária */
+.psicoterapia-card:hover .card-icon {
+    background-color: var(--color-ruimte);
+    color: #fff;
+}
+
+/* Títulos e texto */
+.psicoterapia-card h3 {
+    color: #333;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.psicoterapia-card p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Responsividade */
+@media (max-width: 991px) {
+    .psicoterapia-section {
+        padding: 60px 0;
+    }
+    .margin-pic {
+        margin-top: 76px!important;
+        margin-bottom: 60!important;
+    }
+    .faq-card {
+        margin: 20px auto;
+        border-radius: 10px;
+        box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 1);
+        z-index: 2;
+        position: relative;
+        background-color: var(--color-white);
+        display: block;
+        text-align: center;
+        min-width: 262px;
+        max-width: 350px!important;
+        font-size: 15px;
+        word-wrap: break-word;
+        white-space: normal;
+    }
+    
+    .text-bio p {
+        /* margin-top: 15px; */
+        /* margin-bottom: 15px; */
+        /* margin-left: -20; */
+        font-size: 1.25rem!important;
+        /* min-width: 280px; */
+    }
+
+    .psicoterapia-card {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .psicoterapia-intro p {
+        font-size: 16px;
+    }
+    
+    .psicoterapia-card h3 {
+        font-size: 18px;
+    }
+    
+    .psicoterapia-card p {
+        font-size: 15px;
+    }
+    
+    .card-icon {
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+    }
+    
+    .card-icon i {
+        font-size: 28px;
+        line-height: 70px;
+    }
+}
+
+/* CSS para tornar os efeitos de hover permanentes */
+
+/* Propriedades básicas dos cards */
+.service-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px 20px;
+    height: 100%;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra elevada permanente */
+    position: relative;
+    transition: all 0.3s ease;
+    transform: translateY(-5px); /* Efeito de elevação permanente */
+    overflow: hidden;
+    z-index: 1;
+}
+.service-block{
+padding-top: 60px!important;
+} 
+.service-card p {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.section-title h2 {
+    color: var(--color-primary);
+    font-family: 'PoppinsMedium', 'Rubik', sans-serif;
+    
+    font-weight: 700;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+/* Barra de cor no topo do card */
+
+
+/* Ícones dos cards */
+.service-icon {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.service-icon:after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 50%;
+    border: 2px dashed rgba(78, 115, 223, 0.3);
+    animation: rotate 15s linear infinite; /* Animação de rotação permanente */
+    opacity: 1;
+}
+
+.service-icon i {
+    font-size: 28px;
+}
+
+/* Cores específicas para os ícones de cada etapa */
+.service-icon-step1 {
+    background-color: var(--step1-color, #4e73df);
+    color: #fff;
+}
+
+.service-icon-step2 {
+    background-color: var(--step2-color, #36b9cc);
+    color: #fff;
+}
+
+.service-icon-step3 {
+    background-color: var(--step3-color, #1cc88a);
+    color: #fff;
+}
+
+.service-icon-step4 {
+    background-color: var(--step4-color, #f6c23e);
+    color: #fff;
+}
+
+.service-icon-step5 {
+    background-color: var(--step5-color, #e74a3b);
+    color: #fff;
+}
+
+/* Estilo para os números */
+.step-number {
+    position: absolute;
+    top: 0px;
+    right: -5px;
+    width: 30px;
+    height: 40px;
+    line-height: 30px;
+    border-radius: 19%;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transform: scale(1.1); /* Escala aumentada permanente */
+}
+
+/* Cores para os números */
+.service-card:nth-of-type(1) .step-number {
+    background-color: var(--step1-color, #4e73df);
+}
+
+.service-card:nth-of-type(2) .step-number {
+    background-color: var(--step2-color, #36b9cc);
+}
+
+.service-card:nth-of-type(3) .step-number {
+    background-color: var(--step3-color, #1cc88a);
+}
+
+.service-card:nth-of-type(4) .step-number {
+    background-color: var(--step4-color, #f6c23e);
+}
+
+.service-card:nth-of-type(5) .step-number {
+    background-color: var(--step5-color, #e74a3b);
+}
+
+/* Títulos dos cards */
+.service-card h5 {
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: var(--primary-color, #1A2C53); /* Cor do título realçada permanentemente */
+}
+
+/* Cards de benefícios */
+.benefits-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px 25px;
+    height: 100%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Sombra maior permanente */
+    transform: translateY(-5px); /* Elevação permanente */
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.benefits-card h4 {
+    color: var(--primary-color, #1A2C53);
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(26, 44, 83, 0.1);
+    position: relative;
+}
+
+.benefits-card h4:after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100px; /* Linha expandida permanente */
+    height: 2px;
+    background-color: var(--primary-color, #1A2C53);
+}
+
+.benefits-card ul li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    color: #333!important; /* Cor do texto mais escura permanente */
+    transform: translateX(5px); /* Deslocamento permanente */
+}
+
+.benefits-card ul li:before {
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    color: var(--color-primary); /* Cor do ícone realçada permanente */
+    font-size: 14px;
+}
+
+/* Botão CTA */
+.cta-simple .btn {
+    padding: 12px 30px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-radius: 50px;
+    box-shadow: 0 8px 20px rgba(26, 44, 83, 0.3); /* Sombra maior permanente */
+    background: linear-gradient(45deg, var(--step1-color, #4e73df), var(--primary-color, #1A2C53));
+    border: none;
+    transform: translateY(-3px); /* Elevação permanente */
+    animation: pulse 2s infinite; /* Animação de pulso permanente */
+}
+
+/* Animação de rotação para o círculo pontilhado */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Animação de pulso para o botão */
+@keyframes pulse {
+    0% {
+        transform: translateY(-3px) scale(1);
+    }
+    50% {
+        transform: translateY(-3px) scale(1.05);
+    }
+    100% {
+        transform: translateY(-3px) scale(1);
+    }
+}
+
+@media (max-width: 767px) {
+    div, ul, li, .nav-link {
+        color: var(--color-white) !important;
+        font-size: 12px;
+        padding-left: 0px; 
+        padding-right: 0px; 
+        padding-top: 10px;
+    }
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.faq {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.accordion {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.accordion-item {
+    margin-bottom: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px var(--shadow);
+}
+
+.accordion-header {
+    background-color: var(--light);
+    padding: 15px 20px;
+    cursor: pointer;
+    position: relative;
+    font-weight: 500;
+    color: var(--primary);
+    transition: background-color 0.3s;
+}
+
+.accordion-header:hover {
+    background-color: var(--accent);
+}
+
+.accordion-content {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: white;
+}
+
+.accordion-content-inner {
+    padding: 20px 0;
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 200px;
+}
+
+
+.bg-texture{
+    background-color: var(--color-primary);
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+
+}
