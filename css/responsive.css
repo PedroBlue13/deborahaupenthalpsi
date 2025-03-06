@@ -36,6 +36,8 @@
     .perfil-mob {
         width: 200%;
         height: 140%; 
+        margin-top: 8%!important;
+        min-height: 464px;
         overflow: hidden;
         object-fit: cover;
         filter: drop-shadow(0px 10px 15px rgba(175, 167, 167, 0.322));
@@ -141,6 +143,7 @@
       .text-bio h4 {
         color: var(--color-primary);
         font-size: 18px;
+        margin-top: 75px!important;
       }
       .text-bio p {
         margin: 15px 0;

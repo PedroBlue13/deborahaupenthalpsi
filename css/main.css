@@ -1165,11 +1165,3 @@ ul {
     object-fit: cover; /* Garante que a imagem cubra o espaço sem distorção */
     object-position: center; /* Centraliza a imagem */
   }
-
-
-
-  .wave-bottom {
-    position: relative;
-    overflow: hidden;
-  }
-  
