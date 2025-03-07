@@ -18,6 +18,28 @@ document.querySelectorAll('.navbar a[href^="#"]').forEach(anchor => {
     });
 });
 
+function animateOnScroll() {
+    const elements = document.querySelectorAll('.fade-in-left, .fade-in-right, .fade-in-up');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translate3d(0, 0, 0)';
+            }
+        });
+    }, { threshold: 0.1 });
+    
+    elements.forEach(element => {
+        element.style.opacity = '0';
+        observer.observe(element);
+    });
+}
+
+// Iniciar animações quando a página carrega
+document.addEventListener('DOMContentLoaded', animateOnScroll);
+
+
 function isMobile() {
     return /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|Mobile/i.test(navigator.userAgent) || window.innerWidth <= 768;
 }
