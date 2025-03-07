@@ -141,27 +141,33 @@
 
 /* Cores específicas para cada especialidade */
 .specialty-card:nth-child(1) {
-    --specialty-color: #e74a3b; /* Ansiedade - vermelho */
+    --specialty-color: #e74a3b;
+    /* Ansiedade - vermelho */
 }
 
 .specialty-card:nth-child(2) {
-    --specialty-color: #36b9cc; /* Depressão - azul claro */
+    --specialty-color: #36b9cc;
+    /* Depressão - azul claro */
 }
 
 .specialty-card:nth-child(3) {
-    --specialty-color: #1cc88a; /* Desenvolvimento - verde */
+    --specialty-color: #1cc88a;
+    /* Desenvolvimento - verde */
 }
 
 .specialty-card:nth-child(4) {
-    --specialty-color: #f6c23e; /* Relacionamentos - amarelo */
+    --specialty-color: #f6c23e;
+    /* Relacionamentos - amarelo */
 }
 
 .specialty-card:nth-child(5) {
-    --specialty-color: #5a5c69; /* Trabalho - cinza */
+    --specialty-color: #5a5c69;
+    /* Trabalho - cinza */
 }
 
 .specialty-card:nth-child(6) {
-    --specialty-color: #4e73df; /* TCC - azul */
+    --specialty-color: #4e73df;
+    /* TCC - azul */
 }
 
 /* Animações */
@@ -174,24 +180,24 @@
     .specialty-section {
         padding: 70px 0;
     }
-    
+
     .specialty-card {
         padding: 30px 20px;
         margin-bottom: 25px;
     }
-    
+
     .specialty-icon {
         width: 70px;
         height: 70px;
         line-height: 70px;
         margin-bottom: 20px;
     }
-    
+
     .specialty-icon i {
         font-size: 28px;
         line-height: 70px;
     }
-    
+
     .specialty-card h5 {
         font-size: 18px;
     }
@@ -201,26 +207,26 @@
     .specialty-section {
         padding: 60px 0;
     }
-    
+
     .specialty-card {
         padding: 25px 15px;
     }
-    
+
     .specialty-icon {
         width: 60px;
         height: 60px;
         line-height: 60px;
     }
-    
+
     .specialty-icon i {
         font-size: 24px;
         line-height: 60px;
     }
-    
+
     .specialty-card h5 {
         font-size: 17px;
     }
-    
+
     .specialty-card p {
         font-size: 14px;
     }
@@ -336,8 +342,9 @@ li,
 }
 
 .img-logo:hover {
-    transform: scale(1.05); /* Aumenta levemente a imagem */
-  }
+    transform: scale(1.05);
+    /* Aumenta levemente a imagem */
+}
 
 .navbar-togle {
     color: var(--color-white);
@@ -372,11 +379,11 @@ li,
 }
 
 .text-bio {
-    flex-direction: column!important;
-    justify-content: center!important;
+    flex-direction: column !important;
+    justify-content: center !important;
     margin-top: 20px;
-    padding-left: 35px; 
-    padding-right: 35px; 
+    padding-left: 35px;
+    padding-right: 35px;
 }
 
 .text-bio h4 {
@@ -399,22 +406,25 @@ li,
     font-weight: 600;
     letter-spacing: 0.5px;
     border-radius: 50px;
-    box-shadow: 0 8px 20px rgba(128, 132, 141, 0.514); /* Sombra maior permanente */
+    box-shadow: 0 8px 20px rgba(128, 132, 141, 0.514);
+    /* Sombra maior permanente */
     background: linear-gradient(45deg, var(--color-primary), #242527fa);
     border: none;
-     /* Elevação permanente */
-     /* Animação de pulso permanente */
+    /* Elevação permanente */
+    /* Animação de pulso permanente */
 }
+
 .btn-blue2 {
     padding: 12px 30px;
     font-weight: 600;
     letter-spacing: 0.5px;
     border-radius: 50px;
-    box-shadow: 0 8px 20px rgba(26, 44, 83, 0.3); /* Sombra maior permanente */
+    box-shadow: 0 8px 20px rgba(26, 44, 83, 0.3);
+    /* Sombra maior permanente */
     background: linear-gradient(45deg, var(--color-primary), #76787c);
     border: none;
-     /* Elevação permanente */
-     /* Animação de pulso permanente */
+    /* Elevação permanente */
+    /* Animação de pulso permanente */
 }
 
 .btn-blue.active,
@@ -423,8 +433,9 @@ li,
     animation: pulse 2s infinite;
     transform: translateY(-3px);
 }
+
 .btn-blue2:hover {
-    
+
     transform: translateY(-3px);
 }
 
@@ -461,6 +472,7 @@ li,
 .btn-icon-left {
     padding-left: 60px;
 }
+
 .btn-icon-left-g {
     padding-left: 60px;
 }
@@ -543,13 +555,13 @@ li,
 }
 
 
- /* Cria o formato de arco na parte superior */
+/* Cria o formato de arco na parte superior */
 
 
 
 .services {
     padding-top: 4%;
-    
+
     background-color: var(--color-separate);
     filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.466));
 
@@ -701,8 +713,9 @@ footer a:hover {
     padding: 30px 0;
     background-color: #f7f7fa;
 }
+
 .services-section {
-    padding: 15px 0!important;
+    padding: 15px 0 !important;
     background-image: url("https://www.transparenttextures.com/patterns/wine-cork.png");
 
 }
@@ -712,7 +725,7 @@ footer a:hover {
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 25px;
-    
+
 }
 
 .psicoterapia-intro {
@@ -748,11 +761,44 @@ footer a:hover {
     height: 80px;
     border-radius: 50%;
     margin: 0 auto 25px;
-    background-color: var(--color-secondary); /* Azul mais escuro para o fundo */
-    color: #4a68e0; /* Azul mais escuro para o ícone */
+    background-color: var(--color-secondary);
+    /* Azul mais escuro para o fundo */
+    color: #4a68e0;
+    /* Azul mais escuro para o ícone */
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s ease;
+}
+.card-icon {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+
+}
+.card-icon2 {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    margin-top: 30px;
+    margin-left: 4px;
+}
+.card-icon2 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 25px;
+    background-color: var(--color-secondary);
+    /* Azul mais escuro para o fundo */
+    color: #4a68e0;
+    /* Azul mais escuro para o ícone */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+.card-icon2 i {
+    font-size: 32px;
     transition: all 0.3s ease;
 }
 
@@ -781,7 +827,8 @@ footer a:hover {
     line-height: 1.6;
     margin-bottom: 0;
 }
-.psicoterapia-section{
+
+.psicoterapia-section {
     background-image: url("https://www.transparenttextures.com/patterns/wine-cork.png");
 
 }
@@ -791,10 +838,12 @@ footer a:hover {
     .psicoterapia-section {
         padding: 60px 0;
     }
+
     .margin-pic {
-        margin-top: 76px!important;
-        margin-bottom: 60!important;
+        margin-top: 76px !important;
+        margin-bottom: 60 !important;
     }
+
     .faq-card {
         margin: 20px auto;
         border-radius: 10px;
@@ -805,17 +854,17 @@ footer a:hover {
         display: block;
         text-align: center;
         min-width: 262px;
-        max-width: 350px!important;
+        max-width: 350px !important;
         font-size: 15px;
         word-wrap: break-word;
         white-space: normal;
     }
-    
+
     .text-bio p {
         /* margin-top: 15px; */
         /* margin-bottom: 15px; */
         /* margin-left: -20; */
-        font-size: 1.25rem!important;
+        font-size: 1.25rem !important;
         /* min-width: 280px; */
     }
 
@@ -828,22 +877,36 @@ footer a:hover {
     .psicoterapia-intro p {
         font-size: 16px;
     }
-    
+
     .psicoterapia-card h3 {
         font-size: 18px;
     }
-    
+
     .psicoterapia-card p {
         font-size: 15px;
     }
-    
+
     .card-icon {
         width: 70px;
         height: 70px;
         line-height: 70px;
     }
-    
+
     .card-icon i {
+        font-size: 28px;
+        line-height: 70px;
+    }
+    .card-icon2{
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        margin-top: 30px;
+        margin-left: 2px;
+        margin-right: 8px;
+        padding-right: 2px;
+    }
+
+    .card-icon2 i {
         font-size: 28px;
         line-height: 70px;
     }
@@ -858,16 +921,20 @@ footer a:hover {
     padding: 30px 20px;
     height: 100%;
     text-align: center;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra elevada permanente */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    /* Sombra elevada permanente */
     position: relative;
     transition: all 0.3s ease;
-    transform: translateY(-5px); /* Efeito de elevação permanente */
+    transform: translateY(-5px);
+    /* Efeito de elevação permanente */
     overflow: hidden;
     z-index: 1;
 }
-.service-block{
-padding-top: 60px!important;
-} 
+
+.service-block {
+    padding-top: 60px !important;
+}
+
 .service-card p {
     color: #555;
     font-size: 18px;
@@ -877,7 +944,7 @@ padding-top: 60px!important;
 .section-title h2 {
     color: var(--color-primary);
     font-family: 'PoppinsMedium', 'Rubik', sans-serif;
-    
+
     font-weight: 700;
     margin-bottom: 25px;
     margin-top: 25px;
@@ -909,7 +976,8 @@ padding-top: 60px!important;
     bottom: -5px;
     border-radius: 50%;
     border: 2px dashed rgba(78, 115, 223, 0.3);
-    animation: rotate 15s linear infinite; /* Animação de rotação permanente */
+    animation: rotate 15s linear infinite;
+    /* Animação de rotação permanente */
     opacity: 1;
 }
 
@@ -956,7 +1024,8 @@ padding-top: 60px!important;
     font-weight: bold;
     font-size: 16px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transform: scale(1.1); /* Escala aumentada permanente */
+    transform: scale(1.1);
+    /* Escala aumentada permanente */
 }
 
 /* Cores para os números */
@@ -984,7 +1053,8 @@ padding-top: 60px!important;
 .service-card h5 {
     margin-bottom: 15px;
     font-weight: 700;
-    color: var(--primary-color, #1A2C53); /* Cor do título realçada permanentemente */
+    color: var(--primary-color, #1A2C53);
+    /* Cor do título realçada permanentemente */
 }
 
 /* Cards de benefícios */
@@ -993,8 +1063,10 @@ padding-top: 60px!important;
     border-radius: 10px;
     padding: 30px 25px;
     height: 100%;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Sombra maior permanente */
-    transform: translateY(-5px); /* Elevação permanente */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    /* Sombra maior permanente */
+    transform: translateY(-5px);
+    /* Elevação permanente */
     position: relative;
     overflow: hidden;
 }
@@ -1016,7 +1088,8 @@ padding-top: 60px!important;
     position: absolute;
     bottom: -2px;
     left: 0;
-    width: 100px; /* Linha expandida permanente */
+    width: 100px;
+    /* Linha expandida permanente */
     height: 2px;
     background-color: var(--primary-color, #1A2C53);
 }
@@ -1025,8 +1098,10 @@ padding-top: 60px!important;
     position: relative;
     padding-left: 25px;
     margin-bottom: 12px;
-    color: #333!important; /* Cor do texto mais escura permanente */
-    transform: translateX(5px); /* Deslocamento permanente */
+    color: #333 !important;
+    /* Cor do texto mais escura permanente */
+    transform: translateX(5px);
+    /* Deslocamento permanente */
 }
 
 .benefits-card ul li:before {
@@ -1035,7 +1110,8 @@ padding-top: 60px!important;
     font-weight: 900;
     position: absolute;
     left: 0;
-    color: var(--color-primary); /* Cor do ícone realçada permanente */
+    color: var(--color-primary);
+    /* Cor do ícone realçada permanente */
     font-size: 14px;
 }
 
@@ -1045,11 +1121,14 @@ padding-top: 60px!important;
     font-weight: 600;
     letter-spacing: 0.5px;
     border-radius: 50px;
-    box-shadow: 0 8px 20px rgba(26, 44, 83, 0.3); /* Sombra maior permanente */
+    box-shadow: 0 8px 20px rgba(26, 44, 83, 0.3);
+    /* Sombra maior permanente */
     background: linear-gradient(45deg, var(--step1-color, #4e73df), var(--primary-color, #1A2C53));
     border: none;
-    transform: translateY(-3px); /* Elevação permanente */
-    animation: pulse 2s infinite; /* Animação de pulso permanente */
+    transform: translateY(-3px);
+    /* Elevação permanente */
+    animation: pulse 2s infinite;
+    /* Animação de pulso permanente */
 }
 
 /* Animação de rotação para o círculo pontilhado */
@@ -1057,6 +1136,7 @@ padding-top: 60px!important;
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
@@ -1067,20 +1147,26 @@ padding-top: 60px!important;
     0% {
         transform: translateY(-3px) scale(1);
     }
+
     50% {
         transform: translateY(-3px) scale(1.05);
     }
+
     100% {
         transform: translateY(-3px) scale(1);
     }
 }
 
 @media (max-width: 767px) {
-    div, ul, li, .nav-link {
+
+    div,
+    ul,
+    li,
+    .nav-link {
         color: var(--color-white) !important;
         font-size: 12px;
-        padding-left: 0px; 
-        padding-right: 0px; 
+        padding-left: 0px;
+        padding-right: 0px;
         padding-top: 10px;
     }
 }
@@ -1139,7 +1225,7 @@ ul {
 }
 
 
-.bg-texture{
+.bg-texture {
     background-color: var(--color-primary);
     background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
 
@@ -1152,34 +1238,38 @@ ul {
     position: relative;
     width: 300px;
     height: 300px;
-   /* Fundo verde claro */
+    /* Fundo verde claro */
     padding: 20px;
-  }
-  
-  .arch-inner {
+}
+
+.arch-inner {
     position: relative;
     width: 100%;
     height: 100%;
-  }
-  
-  .arch-image {
+}
+
+.arch-image {
     width: 100%;
     height: 100%;
-    border-radius: 150px 150px 0 0; /* Cria o formato de arco na parte superior */
+    border-radius: 150px 150px 0 0;
+    /* Cria o formato de arco na parte superior */
     overflow: hidden;
     position: relative;
-    border: 1px solid #666; /* Borda fina opcional */
-  }
-  
-  .arch-image img {
+    border: 1px solid #666;
+    /* Borda fina opcional */
+}
+
+.arch-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorção */
-    object-position: center; /* Centraliza a imagem */
-  }
+    object-fit: cover;
+    /* Garante que a imagem cubra o espaço sem distorção */
+    object-position: center;
+    /* Centraliza a imagem */
+}
 
 
-  .section-title h2 {
+.section-title h2 {
     color: var(--luxe);
     font-weight: 600;
     position: relative;
@@ -1460,31 +1550,12 @@ ul {
     object-fit: cover;
     transition: transform var(--transition-speed) ease;
     border: 1px solid #666;
-padding-bottom: 150px;
-border-radius: 150px 150px 0 0;
-padding: 4px;
-overflow: hidden;
-object-fit: cover;
+    padding-bottom: 150px;
+    border-radius: 150px 150px 0 0;
+    padding: 4px;
+    overflow: hidden;
+    object-fit: cover;
 }
-
-position: absolute;
-width: 100%;
-height: 100%;
-/* Controla a largura */
-max-width: 460px;
-/* Limita a largura máxima */
-max-height: 760px;
-/* Limita a altura máxima */
-
-
-left: 50%;
-top: 62%;
-transform: translate(-50%, -50%);
-
-z-index: 3;
-
-
-
 
 .principles-image-container:hover .img-principles {
     transform: scale(1.05);
@@ -1517,8 +1588,13 @@ z-index: 3;
 }
 
 @keyframes pulse-border {
-    from { border-left-color: rgba(154, 110, 90, 0.4); }
-    to { border-left-color: rgba(154, 110, 90, 1); }
+    from {
+        border-left-color: rgba(154, 110, 90, 0.4);
+    }
+
+    to {
+        border-left-color: rgba(154, 110, 90, 1);
+    }
 }
 
 .principle-item::before {
@@ -1533,8 +1609,13 @@ z-index: 3;
 }
 
 @keyframes grow-line {
-    0% { height: 0; }
-    100% { height: 100%; }
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 100%;
+    }
 }
 
 .principle-arrow {
@@ -1556,10 +1637,12 @@ z-index: 3;
         transform: scale(1);
         box-shadow: 0 0 0 0 rgba(154, 110, 90, 0.4);
     }
+
     70% {
         transform: scale(1.1);
         box-shadow: 0 0 0 10px rgba(154, 110, 90, 0);
     }
+
     100% {
         transform: scale(1);
         box-shadow: 0 0 0 0 rgba(154, 110, 90, 0);
@@ -1591,8 +1674,13 @@ z-index: 3;
 }
 
 @keyframes expand-line {
-    0% { width: 0; }
-    100% { width: 100%; }
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
 }
 
 .principle-content p {
@@ -1620,6 +1708,7 @@ z-index: 3;
         opacity: 0;
         transform: translate3d(-50px, 0, 0);
     }
+
     to {
         opacity: 1;
         transform: translate3d(0, 0, 0);
@@ -1631,6 +1720,7 @@ z-index: 3;
         opacity: 0;
         transform: translate3d(50px, 0, 0);
     }
+
     to {
         opacity: 1;
         transform: translate3d(0, 0, 0);
@@ -1642,6 +1732,7 @@ z-index: 3;
         opacity: 0;
         transform: translate3d(0, 50px, 0);
     }
+
     to {
         opacity: 1;
         transform: translate3d(0, 0, 0);
@@ -1653,9 +1744,11 @@ z-index: 3;
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.1);
     }
+
     100% {
         transform: scale(1);
     }
@@ -1673,47 +1766,51 @@ z-index: 3;
         margin-right: 0;
         justify-content: center;
     }
-    
+
     .img-principles {
         max-width: 70%;
+        margin: 0 auto;
+        display: block;
+
     }
-    
+
     .principles-list {
         margin-left: 0;
     }
-    
+
     .principles-section {
         padding: 40px 0;
     }
-    
+
     .principle-item {
         margin-bottom: 20px;
     }
 }
 
 @media (max-width: 767px) {
+
     .process-label:before,
     .process-label:after {
         width: 25px;
         margin: 0 10px;
     }
-    
 
-    
+
+
     .principle-item {
         padding: 15px 20px;
     }
-    
+
     .principle-arrow {
         min-width: 35px;
         height: 35px;
         margin-right: 10px;
     }
-    
+
     .principle-content h5 {
         font-size: 16px;
     }
-    
+
     .principle-content p {
         font-size: 14px;
     }
