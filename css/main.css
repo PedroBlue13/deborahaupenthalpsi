@@ -258,7 +258,7 @@
     --color-black: #212121;
     --color-white: #ffffff;
     --color-text: #4f4f4f;
-    --color-primary: #2c2e21;
+    --color-primary:  #dbb7a7;
     /* #373537 */
     --color-secondary: #9a6e5a;
     --color-ruimte: #bd9a6a;
@@ -1817,3 +1817,6 @@ ul {
         font-size: 14px;
     }
 }
+
+
+
